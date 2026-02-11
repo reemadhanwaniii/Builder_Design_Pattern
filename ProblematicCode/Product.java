@@ -13,7 +13,7 @@ public class Product {
     private double discount;
     private List<String> images;
 
-    Product(String name, String desc, double price, String brand, String category, String created_at, String updated_at,double discount, List<String> images) {
+    public Product(String name, String desc, double price, String brand, String category, String created_at, String updated_at,double discount, List<String> images) {
         this.name = name;
         this.desc = desc;
         this.price = price;
