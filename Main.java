@@ -1,16 +1,17 @@
-import BetterCode.v1.Product;
+import BetterCode.v3.Builder;
+import BetterCode.v3.Product;
 
 import java.util.ArrayList;
 
 public class Main {
     static void main(String[] args) {
 
-        Product p1 = new Product();
-        p1.setBrand("Apple");
-        p1.setCategory("Electronics");
-        p1.setDesc("Apple iphone");
+        Builder b = new Builder();
+        b.setBrand("Apple");
+        b.setCategory("Electronics");
+        b.setPrice(100000);
 
-//        .... far far clean solution than previous
+        Product p = new Product(b);
     }
 }
 
