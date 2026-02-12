@@ -68,3 +68,9 @@ we have taken access from user to create new product, they will not able to pass
 Product p = b.build();
 
 then our builder class also won't be able to call this constructor
+
+we make product class constructor private only variables of product can access it.
+so how about we delete builder class and create it inside Product class as static.
+
+#### Applications of builder pattern
+-> grpc - protobuff
