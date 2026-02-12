@@ -1,6 +1,4 @@
-package BetterCode.v3;
-
-import BetterCode.v4.Product;
+package BetterCode.v4;
 
 import java.util.List;
 
@@ -89,5 +87,7 @@ public class Builder {
         return images;
     }
 
-
+    public Product build() {
+        return new Product(this);
+    }
 }

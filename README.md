@@ -55,3 +55,16 @@ class Product {
 
 
 V3 is builder design pattern (creational design pattern : deals with problem during object creation).
+
+#### Problem with v3
+-> somebody can pass null in place of builder object
+-> builder and product class are very tighly coupled.
+-> builder has no existence without product.
+-> client needs to know about builder what is the need of client knows about builder
+-> for every class you have to make 2 classes example product class and its builder, category class and its builder
+
+
+we have taken access from user to create new product, they will not able to pass irrelevant thngs
+Product p = b.build();
+
+then our builder class also won't be able to call this constructor
